@@ -1,0 +1,202 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Pixal - Button CSS
+  Version: 1.0 
+	
+-----------------------------------------------------------------------------------*/
+
+/*---- Button ----*/
+.btn {
+  background-color: #3e3e3e;
+  border: 1px solid #3e3e3e;
+  border-radius: 5px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  padding: 7px 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn:focus {
+  color: #ffffff;
+}
+/*--- Button With Icon ----*/
+.btn-icon-left {
+  padding-left: 63px;
+}
+.btn-icon-right {
+  padding-right: 63px;
+}
+.btn > i {
+  display: block;
+  font-size: 18px;
+  line-height: inherit;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.btn-icon-left i {
+  left: 30px;
+}
+.btn-icon-right i {
+  right: 30px;
+}
+
+/*White*/
+.btn-white {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #3e3e3e;
+}
+.btn-white:focus {
+  color: #3e3e3e;
+}
+/*Gradient*/
+.btn-gradient {
+  background-image: -o-linear-gradient(45deg, #4481eb 0%, #04bffe 100%);
+  background-image: linear-gradient(45deg, #4481eb 0%, #04bffe 100%);
+  border-color: transparent;
+  color: #ffffff;
+}
+/*Border*/
+.btn-border {
+  background-color: transparent;
+  color: #3e3e3e;
+}
+.btn-border:focus {
+  color: #3e3e3e;
+}
+/*Border White*/
+.btn-border-white {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+/*Border Gradient*/
+.btn-border-gradient {
+  background-color: transparent;
+  background-image: none;
+  border-color: #04bffe #04bffe #4481eb #4481eb;
+  color: #4481eb;
+}
+.btn-border-gradient:focus {
+  color: #4481eb;
+}
+
+/*---- Button Size ----*/
+.btn-lg {
+  height: 46px;
+  padding: 10px 40px;
+}
+.btn-sm {
+  font-size: 13px;
+  height: 34px;
+  padding: 4px 20px;
+}
+.btn-sm > i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/*---- Button Hover ----*/
+.btn:hover {
+  background-color: #3e3e3e;
+  border-color: #3e3e3e;
+  color: #ffffff;
+}
+.btn-hover-border:hover {
+  background-color: transparent;
+  color: #3e3e3e;
+}
+/*Button Hover White*/
+.btn-hover-white:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #3e3e3e;
+}
+.btn-hover-white-border:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+/*Button Hover Gradient*/
+.btn-hover-gradient {
+  -webkit-transition: background 0.3s ease 0s, color 0.3s ease 0s;
+  -o-transition: background 0.3s ease 0s, color 0.3s ease 0s;
+  transition: background 0.3s ease 0s, color 0.3s ease 0s;
+}
+.btn-hover-gradient:hover {
+  background-image: -o-linear-gradient(45deg, #4481eb 0%, #04bffe 100%);
+  background-image: linear-gradient(45deg, #4481eb 0%, #04bffe 100%);
+  border-color: transparent;
+  color: #ffffff;
+}
+.btn-hover-gradient-border {
+  -webkit-transition: background 0s ease 0s, color 0.3s ease 0s;
+  -o-transition: background 0s ease 0s, color 0.3s ease 0s;
+  transition: background 0s ease 0s, color 0.3s ease 0s;
+}
+.btn-hover-gradient-border:hover {
+  background-image: none;
+  background-color: transparent;
+  border-color: #04bffe #04bffe #4481eb #4481eb;
+  color: #4481eb;
+}
+
+/*---- Theme Button Creative ----*/
+/*Primary*/
+.btn-cr {
+  background-color: #fbb03b;
+  border-color: #fbb03b;
+  color: #050d30;
+}
+/*Secondary*/
+.btn-cr-2 {
+  background-color: #050d30;
+  border-color: #050d30;
+  color: #fbb03b;
+}
+
+/*Primary Hover*/
+.btn-hover-cr:hover {
+  background-color: #fbb03b;
+  border-color: #fbb03b;
+  color: #050d30;
+}
+.btn-hover-border-cr:hover {
+  background-color: transparent;
+  border-color: #fbb03b;
+  color: #fbb03b;
+}
+
+/*Secondary Hover*/
+.btn-hover-cr-2:hover {
+  background-color: #050d30;
+  border-color: #050d30;
+  color: #fbb03b;
+}
+.btn-hover-border-cr-2:hover {
+  background-color: transparent;
+  border-color: #050d30;
+  color: #050d30;
+}
+
+/*---- Theme Button Restaurant ----*/
+.btn-res, .btn-hover-res, .btn-res:focus, .btn-hover-res:focus {
+  background-color: #e54c2a;
+  border-color: #e54c2a;
+  color: #ffffff;
+}
+.btn-res-hover-border:hover {
+  background-color: transparent;
+  border-color: #e54c2a;
+  color: #e54c2a;
+}

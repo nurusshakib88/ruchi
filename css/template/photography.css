@@ -1,0 +1,684 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Pixal - Photography Template CSS
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1.    Section Title
+	2.    Hero Section
+	3.    Gallery Section
+	4.    Team Section
+	5.    Footer Section
+	6.    About Section
+	7.    Service Section
+	8.    Conatact Section
+	9.    Responsive CSS
+	
+-----------------------------------------------------------------------------------*/
+.ph-modal {
+  padding: 150px 0;
+}
+
+/* -----------------------------------
+    1. Section Title
+--------------------------------------*/
+/*-- Section Title --*/
+.ph-section-title {}
+.ph-section-title h4 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.ph-section-title p {
+  max-width: 930px;
+}
+
+/* -----------------------------------
+    2. Hero Section
+--------------------------------------*/
+.ph-hero-section {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+/*-- Hero Shape --*/
+.ph-hero-shape {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.ph-hero-shape img {}
+
+/*-- Hero Social --*/
+.ph-hero-social {
+  bottom: 65px;
+  left: 100px;
+  position: absolute;
+  z-index: 3;
+}
+.ph-hero-social h5 {
+  color: #ffffff;
+  display: block;
+  float: left;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  margin: 0 105px 0 0;
+  position: relative;
+}
+.ph-hero-social h5::before {
+  background-color: #ffffff;
+  bottom: 9px;
+  content: "";
+  height: 1px;
+  left: 100%;
+  position: absolute;
+  width: 45px;
+  margin-left: 30px;
+}
+.ph-hero-social a {
+  color: #ffffff;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.ph-hero-social a:last-child {
+  margin-right: 0;
+}
+.ph-hero-social a i {
+  display: block;
+  line-height: 24px;
+}
+.ph-hero-social a:hover {
+  color: #3653ff;
+}
+
+/*-- Hero Content --*/
+.ph-hero-content {}
+.ph-hero-content h1 {
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Playfair Display",serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  margin: 0;
+  padding: 0 60px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.ph-hero-content h1::before {
+  background-color: #ffffff;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.15;
+  position: absolute;
+  top: -38px;
+  width: 100%;
+  z-index: -1;
+}
+
+
+/* -----------------------------------
+    3. Gallery Section
+--------------------------------------*/
+
+.ph-isotop-item {}
+.ph-isotop-item a {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.ph-isotop-item a::before {
+  background-color: #3653ff;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ph-isotop-item a:hover::before {
+  opacity: 0.8;
+}
+.ph-isotop-item a img {
+  border: 10px solid #f1f1f1;
+  width: 100%;
+}
+.ph-isotop-item a span {
+  left: 30px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 32px;
+  opacity: 0;
+}
+.ph-isotop-item a:hover span {
+  opacity: 1;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/* -----------------------------------
+    4. Team Section
+--------------------------------------*/
+.ph-team-wrapper {
+  -webkit-box-shadow: 0 0 15px rgba(59, 155, 242, 0.15);
+  box-shadow: 0 0 15px rgba(59, 155, 242, 0.15);
+  float: left;
+  width: 100%;
+  padding: 70px;
+}
+
+/*-- Single Team --*/
+.ph-single-team {}
+
+/*-- Team Image --*/
+.ph-single-team .image {
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.ph-single-team .image::before {
+  background-color: #3653ff;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+.ph-single-team:hover .image::before {
+  opacity: 0.8;
+  visibility: visible;
+  z-index: 1;
+}
+.ph-single-team .image img {
+  width: 100%;
+}
+/*-- Social --*/
+.ph-single-team .image .social {
+  left: 15px;
+  opacity: 0;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 9;
+}
+.ph-single-team:hover .image .social {
+  opacity: 1;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.ph-single-team .image .social a {
+  background-color: #ffffff;
+  border-radius: 3px;
+  display: inline-block;
+  height: 30px;
+  margin: 0 3px;
+  width: 30px;
+}
+.ph-single-team .image .social a i {
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+}
+/*-- Social Color --*/
+.ph-single-team .image .social a.facebook {
+  color: #516eab;
+}
+.ph-single-team .image .social a.twitter {
+  color: #40bff5;
+}
+.ph-single-team .image .social a.google {
+  color: #DD4E42;
+}
+.ph-single-team .image .social a.pinterest {
+  color: #bd081c;
+}
+
+/*-- Team Content --*/
+.ph-single-team .content {
+  margin-top: 22px;
+}
+.ph-single-team .content h4 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin: 0;
+  text-transform: capitalize;
+}
+.ph-single-team .content span {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+/* -----------------------------------
+    5. Footer Section
+--------------------------------------*/
+.ph-footer-section {}
+
+/*-- Footer Top --*/
+.ph-footer-top {
+  padding: 60px 0;
+}
+
+/*-- Footer Social --*/
+.ph-footer-social {}
+.ph-footer-social a {
+  color: #3e3e3e;
+  display: inline-block;
+  margin: 10px 15px;
+  vertical-align: top;
+}
+.ph-footer-social a:hover {
+  color: #3653ff;
+}
+.ph-footer-social a i {
+  display: block;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+/*-- Footer Bottom --*/
+.ph-footer-bottom {
+  border-top: 1px solid #f2f2f2;
+  padding: 18px 0;
+}
+
+/*-- Copyright --*/
+.ph-copyright {}
+.ph-copyright p {
+  color: #3e3e3e;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.ph-copyright p a {
+  color: inherit;
+}
+.ph-copyright p a:hover {
+  color: #3653ff;
+}
+
+/*-- Footer Menu --*/
+.ph-footer-menu {}
+.ph-footer-menu nav {}
+.ph-footer-menu nav ul {}
+.ph-footer-menu nav ul li {
+  display: inline-block;
+}
+.ph-footer-menu nav ul li + li {
+  margin-left: 35px;
+}
+.ph-footer-menu nav ul li a {
+  color: #3e3e3e;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.ph-footer-menu nav ul li a:hover {
+  color: #3653ff;
+}
+
+
+/* -----------------------------------
+    6. About Section
+--------------------------------------*/
+.ph-about-area {
+  background-color: #ffffff;
+  padding: 80px 80px 50px;
+}
+
+/*-- Anout Content --*/
+.ph-about-content {
+  padding-right: 40px;
+}
+.ph-about-content p {}
+
+/*-- Skills --*/
+.ph-skills {}
+.ph-single-skill {}
+.ph-single-skill + .ph-single-skill {
+  margin-top: 40px;
+}
+.ph-single-skill h5 {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ph-single-skill .progress {
+  background-color: #f2f2f2;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 7px;
+  margin-bottom: 0;
+  overflow: visible;
+}
+.ph-single-skill .progress .progress-bar {
+  background-color: #2948ff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+}
+.ph-single-skill .progress .progress-bar::before {
+  bottom: 14px;
+  color: #3e3e3e;
+  content: attr(data-progress);
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+}
+
+
+/* -----------------------------------
+    7. Service Section
+--------------------------------------*/
+.ph-services-area {
+  background-color: #ffffff;
+  padding: 80px 80px 50px;
+}
+
+.ph-tab-list {
+  float: left;
+  margin-right: 30px;
+  width: 230px;
+}
+.ph-tab-list li {
+  display: block;
+}
+.ph-tab-list li + li {
+  margin-top: 20px;
+}
+.ph-tab-list li a {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 6px rgba(59, 155, 242, 0.15);
+  box-shadow: 0 0 6px rgba(59, 155, 242, 0.15);
+  color: #3e3e3e;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  height: 50px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  padding: 13px 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ph-tab-list li.active a {
+  background-color: #2948ff;
+  color: #fff;
+}
+
+.ph-tab-content {}
+
+.ph-tab-pane {
+  background-color: #3653ff;
+  padding: 80px;
+}
+.ph-tab-pane h5 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.ph-tab-pane p {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.ph-tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* -----------------------------------
+    8. Conatact Sexction
+--------------------------------------*/
+.ph-contact-area {
+  background-color: #ffffff;
+  padding: 80px 80px 50px;
+}
+
+.ph-contact-info {
+  -webkit-box-shadow: 0 0 6px rgba(59, 155, 242, 0.15);
+  box-shadow: 0 0 6px rgba(59, 155, 242, 0.15);
+  padding: 30px 15px;
+}
+.ph-contact-info i {
+  color: #3653ff;
+  display: block;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 6px;
+}
+.ph-contact-info p {}
+.ph-contact-info a {
+  color: #999999;
+  display: block;
+}
+
+.ph-contact-form {}
+.ph-contact-form form {}
+.ph-contact-form form input, .ph-contact-form form textarea {
+  background-color: #ffffff;
+  border: medium none;
+  -webkit-box-shadow: 0 0 6px rgba(59, 155, 242, 0.15);
+  box-shadow: 0 0 6px rgba(59, 155, 242, 0.15);
+  font-size: 13px;
+  height: 44px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+}
+.ph-contact-form form input {}
+.ph-contact-form form textarea {
+  height: 100px;
+  resize: none;
+}
+.ph-contact-form form input[type="submit"] {
+  color: #3653ff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.ph-contact-form form input[type="submit"]:hover {
+  background-color: #3653ff;
+  color: #ffffff;
+}
+
+
+/* -----------------------------------
+    9. Responsive CSS
+--------------------------------------*/
+
+/*-- Laptop Screen --*/
+@media only screen and (min-width: 1171px) and (max-width: 1400px) {
+
+
+}
+
+
+/*-- Desktop : 992px --*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+.header-fullwidth {
+  padding: 0 45px;
+}
+.ph-hero-content h1 {
+  font-size: 80px;
+  line-height: 80px;
+}
+.ph-hero-content h1::before {
+  top: -25px;
+}
+.ph-contact-info p, .ph-contact-info a {
+  font-size: 14px;
+}
+
+
+}
+
+
+/*-- Tablet : 768px --*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.header-fullwidth {
+  padding: 0 35px;
+}
+.ph-hero-content h1 {
+  font-size: 66px;
+  line-height: 66px;
+  padding: 0 40px;
+}
+.ph-hero-content h1::before {
+  top: -22px;
+}
+.ph-hero-shape {
+  width: 350px;
+}
+.ph-hero-social {
+  left: 50px;
+}
+.ph-tab-list {
+  float: left;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: auto;
+}
+.ph-tab-list li {
+  display: block;
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+}
+.ph-tab-list li:nth-child(2) {
+  margin-top: 0;
+}
+.ph-tab-content {
+  float: left;
+  width: 100%;
+}
+
+
+}
+
+
+/*-- Large Mobile : 480px --*/
+@media only screen and (max-width: 767px) {
+.ph-modal {
+  padding: 80px 0;
+}
+.header-fullwidth {
+  padding: 0 15px;
+}
+.ph-hero-section {
+  height: auto;
+  padding: 150px 0;
+}
+.ph-hero-section .table {
+  position: relative;
+  z-index: 9;
+}
+.ph-hero-content h1 {
+  font-size: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+.ph-hero-content h1::before {
+  top: -10px;
+}
+.ph-hero-shape {
+  width: 220px;
+}
+.ph-hero-social {
+  bottom: 30px;
+  left: 30px;
+}
+.ph-copyright, .ph-footer-menu {
+  text-align: center;
+  width: 100%;
+}
+.ph-about-area, .ph-services-area, .ph-contact-area {
+  background-color: #ffffff;
+  padding: 80px 50px 50px;
+}
+.ph-tab-list {
+  width: 100%;
+}
+.ph-tab-content {
+  float: left;
+  width: 100%;
+}
+.ph-tab-pane {
+  padding: 50px;
+}
+
+
+}
+
+
+/*-- small mobile : 320px --*/
+@media only screen and (max-width: 479px) {
+.ph-hero-social h5 {
+  margin-right: 15px;
+}
+.ph-hero-social h5::before {
+  display: none;
+}
+.ph-team-wrapper {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+}
+.ph-about-area, .ph-services-area, .ph-contact-area {
+  background-color: #ffffff;
+  padding: 30px 15px 0;
+}
+.ph-tab-pane {
+  padding: 30px 20px;
+}
+
+
+}

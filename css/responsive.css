@@ -1,0 +1,102 @@
+
+/* Laptop Screen  */
+@media only screen and (min-width: 1171px) and (max-width: 1400px) {
+
+
+
+}
+
+
+/* Desktop :992px. */
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+
+
+
+}
+
+
+/* Tablet :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*Header Buttons*/
+.header-section .btn, .header-search, .header-social {
+  margin-right: 50px;
+}
+.header-search {
+  padding-right: 50px;
+}
+
+
+}
+
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+.container {
+  width: 450px;
+}
+.table, .table-cell {
+  display: block;
+  height: auto;
+}
+#scrollUp {
+  display: none !important;
+}
+/*Buttons*/
+.btn, .btn-sm, .btn-lg {
+  font-size: 12px;
+  height: 33px;
+  padding: 4px 20px;
+}
+.btn-icon-right {
+  padding-right: 53px;
+}
+.btn-icon-right i {
+  right: 20px;
+}
+.btn-icon-left {
+  padding-left: 53px;
+}
+.btn-icon-left i {
+  left: 20px;
+}
+/*Header*/
+.header-logo {
+  margin: 19px 0;
+  width: 65px;
+}
+.menu-toggle {
+  margin: 25px 0;
+}
+/*Header Buttons*/
+.header-section .btn, .header-social {
+  margin: 18px 50px 18px 0;
+}
+.header-search {
+  padding: 18px 50px 18px 0;
+}
+/*Mobile Menu Toggle*/
+a.meanmenu-reveal {
+  top: -55px;
+}
+
+
+
+
+
+}
+
+
+/* small mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+.container {
+  width: 300px;
+}
+
+
+
+
+
+}

@@ -1,0 +1,810 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Pixal - Minimal Template CSS
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1.    Section Title
+    2.    Menu Section
+	3.    Hero Section
+	4.    About Section
+	5.    Portfolio Section
+	6.    Client Section
+	7.    Footer Section
+	8.    Minimal Pages
+	9.    Team Section
+	10.   Testimonial Section
+	11.   Service Section
+	12.   Contact Section
+	13.   Portfolio Details
+	14.   Responsive CSS
+	
+-----------------------------------------------------------------------------------*/
+
+/* -----------------------------------
+    1. Section Title
+--------------------------------------*/
+/*-- Section Title --*/
+.mp-section-title {}
+.mp-section-title::before {
+  color: #f7f7f7;
+  content: attr(data-name);
+  display: block;
+  font-size: 160px;
+  font-weight: 800;
+  left: 50%;
+  margin-top: -5px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.mp-section-title-2::before {
+  color: #e7e7e7;
+}
+.mp-section-title h1 {
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin: 0;
+  padding: 43px 25px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.mp-section-title h1::before, .mp-section-title h1::after {
+  background-color: #3e3e3e;
+  content: "";
+  height: 4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 80px;
+}
+.mp-section-title h1::before {
+  right: 100%;
+}
+.mp-section-title h1::after {
+  left: 100%;
+}
+
+
+/* -----------------------------------
+    2. Menu Section
+--------------------------------------*/
+.mp-menu-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999;
+}
+.mp-menu-section .container {
+  margin: auto;
+}
+.mp-menu-section.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*---- Menu ----*/
+.mp-menu {
+  padding: 50px 0;
+}
+.mp-menu ul {}
+.mp-menu ul li {
+  margin-bottom: 30px;
+}
+.mp-menu ul li:last-child {
+  margin-bottom: 0;
+}
+.mp-menu ul li a {
+  color: #999999;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.mp-menu ul li a:hover, .mp-menu ul li.active a {
+  color: #3e3e3e; 
+}
+
+
+/* -----------------------------------
+    3. Hero Section
+--------------------------------------*/
+.mp-hero-section {}
+
+/*-- Hero Image --*/
+.mp-hero-image {
+  padding: 0;
+}
+.mp-hero-image img {}
+
+/*-- Hero Content --*/
+.mp-hero-content {
+  border: 6px double #f8f8f8;
+  margin-top: 104px;
+  padding: 190px 80px;
+}
+.mp-hero-content h1 {
+  font-size: 55px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 50px;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+}
+.mp-hero-content h4 {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+
+/* -----------------------------------
+    4. About Section
+--------------------------------------*/
+.mb-about-section {}
+
+/*-- About Content --*/
+.mb-about-content {}
+.mb-about-content p {
+  font-size: 18px;
+  line-height: 34px;
+  margin-bottom: 33px;
+}
+.mb-about-content p:last-child {
+  margin-bottom: 0;
+}
+.mb-about-content a {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.mb-about-content a i {
+  margin-left: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.mb-about-content a:hover i {
+  margin-left: 15px;
+}
+
+
+/* -----------------------------------
+    5. Portfolio Section
+--------------------------------------*/
+.mb-portfolio-section {}
+
+/*-- Portfolio Filter --*/
+.mp-isotop-filter {}
+.mp-isotop-filter button {
+  background-color: transparent;
+  border: medium none;
+  border-radius: 5px;
+  color: #999999;
+  display: block;
+  float: left;
+  font-size: 12px;
+  font-weight: 700;
+  height: 30px;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.mp-isotop-filter button.active, .mp-isotop-filter button.active:hover {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+.mp-isotop-filter button:hover {
+  color: #3e3e3e;
+}
+
+/*-- Portfolio Grid --*/
+.mp-isotop-grid {}
+
+/*-- Portfolio Item --*/
+.mp-isotop-item {
+  float: left;
+}
+.mp-isotop-item img {
+  width: 100%;
+}
+.mp-isotop-item a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.mp-isotop-item a::before {
+  background-color: #000000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.mp-isotop-item a:hover::before {
+  opacity: 0.65;
+}
+.mp-isotop-item a .content {
+  bottom: 50px;
+  opacity: 0;
+  position: absolute;
+  right: 55px;
+  text-align: center;
+}
+.mp-isotop-item a:hover .content {
+  opacity: 1;
+}
+.mp-isotop-item a .content .title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  position: relative;
+  right: -30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.mp-isotop-item a:hover .content .title {
+  right: 0;
+}
+.mp-isotop-item a .content .cat {
+  color: #999999;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 22px;
+  position: relative;
+  left: -30px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.mp-isotop-item a:hover .content .cat {
+  left: 0;
+}
+
+
+/* -----------------------------------
+    6. Client Section
+--------------------------------------*/
+.mp-client-section {}
+
+/*-- Client Slider --*/
+.mp-client-slider {}
+.mp-client-slider .single-client {}
+.mp-client-slider .single-client img {
+  display: inline-block;
+}
+
+
+/* -----------------------------------
+    7. Footer Section
+--------------------------------------*/
+.mp-footer-section {
+  background-color: #343434;
+}
+
+/*-- Footer Top --*/
+.mp-fotter-top {
+  border-bottom: 1px solid #3f3f3f;
+  padding: 65px 0;
+}
+
+/*-- Footer Social --*/
+.mp-footer-social {}
+.mp-footer-social a {
+  color: #dcdcdc;
+  display: inline-block;
+  margin: 0 12px;
+  padding: 0 3px;
+}
+.mp-footer-social a:hover {
+  color: #dcdcdc;
+  display: inline-block;
+  margin: 0 12px;
+  padding: 0 3px;
+}
+.mp-footer-social a i {
+  font-size: 22px;
+  line-height: 24px;
+  display: block;
+}
+
+/*-- Footer Bottom --*/
+.mp-fotter-bottom {
+  border-bottom: 1px solid #3f3f3f;
+  padding: 60px 0;
+}
+
+.mp-footer-copyright {}
+.mp-footer-copyright p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #dddddd;
+  line-height: 30px;
+  margin: 5px 0;
+}
+.mp-footer-copyright p a {
+  color: inherit;
+}
+
+.mp-footer-contact {
+  text-align: right;
+}
+.mp-footer-contact p {
+  color: #dddddd;
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: 5px 0;
+  position: relative;
+  vertical-align: top;
+}
+.mp-footer-contact p:last-child::before {
+  background-color: #5d5d5d;
+  content: "";
+  display: block;
+  float: left;
+  height: 1px;
+  margin-left: 14px;
+  margin-right: 19px;
+  margin-top: 15px;
+  width: 25px;
+}
+.mp-footer-contact p span {
+  color: #999999;
+  text-transform: uppercase;
+}
+
+
+/* -----------------------------------
+    8. Minimal Pages
+--------------------------------------*/
+.mp-breadcrumb-section {
+  padding: 90px 0;
+}
+
+.mp-breadcrumb {}
+.mp-breadcrumb h2 {
+  float: left;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.mp-breadcrumb ul {
+  float: right;
+  margin: 10px 0;
+}
+.mp-breadcrumb ul li {
+  color: #3e3e3e;
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-right: 15px;
+  padding-right: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.mp-breadcrumb ul li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.mp-breadcrumb ul li::before {
+  content: "/";
+  position: absolute;
+  right: -2px;
+  top: 0;
+}
+.mp-breadcrumb ul li:last-child::before {
+  display: none;
+}
+.mp-breadcrumb ul li a {
+  color: inherit;
+}
+
+
+/* -----------------------------------
+    9. Team Section
+--------------------------------------*/
+.mp-team-section {}
+
+/*-- Single Team --*/
+.mp-single-team {
+  text-align: center;
+}
+.mp-single-team img {
+  width: 100%;
+}
+.mp-single-team h4 {
+  margin: 20px 0 5px;
+  text-transform: uppercase;
+}
+.mp-single-team span {
+  display: block;
+  margin-bottom: 10px;
+}
+.mp-single-team .social {
+  display: block;
+}
+.mp-single-team .social a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #999999;
+}
+.mp-single-team .social a:hover {
+  color: #3e3e3e;
+}
+.mp-single-team .social a i {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+/* -----------------------------------
+    10. Testimonial CSS
+--------------------------------------*/
+.mp-testimonial-section {}
+
+/*-- Testimonial Slider --*/
+.mp-testimonial-slider {}
+
+/*-- Single Testimonial --*/
+.mp-single-testimonial {}
+.mp-single-testimonial i {
+  font-size: 32px;
+}
+.mp-single-testimonial h4 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 18px 0 25px;
+  padding: 0;
+  text-transform: uppercase;
+}
+.mp-single-testimonial p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35px;
+}
+.mp-single-testimonial p span {}
+.mp-single-testimonial h5 {
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* -----------------------------------
+    11. Service CSS
+--------------------------------------*/
+.mp-service-section {}
+
+/*-- Service Wrapper --*/
+.mp-service-wrapper {}
+
+/*-- Single Service --*/
+.mp-single-service {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mp-single-service .icon {
+  color: #3e3e3e;
+  float: left;
+  margin-right: 30px;
+}
+.mp-single-service .icon i {
+  display: block;
+  font-size: 36px;
+}
+.mp-single-service .content {}
+.mp-single-service .content h3 {
+  font-weight: 300;
+  line-height: 1;
+}
+.mp-single-service .content p {
+  line-height: 24px;
+  margin: 0;
+}
+
+
+/* -----------------------------------
+    12. Contact CSS
+--------------------------------------*/
+.mp-contact-section {}
+
+/*-- Map --*/
+#mp-google-map {
+  width: 100%;
+  height: 350px;
+}
+
+/*-- Contact Info --*/
+.mp-contact-info {}
+.mp-contact-info ul {}
+.mp-contact-info ul li {}
+.mp-contact-info ul li + li {
+  margin-top: 17px;
+}
+.mp-contact-info ul li span {
+  color: #3e3e3e;
+}
+.mp-contact-info ul li a {
+  color: inherit;
+  display: inline-block;
+}
+.mp-contact-info ul li a:hover {
+  color: #3e3e3e
+}
+
+/*-- Social --*/
+.mp-contact-info .social {
+  margin-top: 20px;
+}
+.mp-contact-info .social a {
+  color: #999999;
+  margin-right: 15px;
+  display: inline-block;
+  line-height: 24px;
+}
+.mp-contact-info .social a i {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
+.mp-contact-info .social a:hover {
+  color: #3e3e3e
+}
+
+/*-- Contact Form --*/
+.mp-contact-form {}
+.mp-contact-form input[type="text"], .mp-contact-form input[type="email"] {
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 40px;
+  line-height: 24px;
+  font-size: 14px;
+  padding: 7px 15px;
+}
+.mp-contact-form textarea {
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 120px;
+  line-height: 24px;
+  font-size: 14px;
+  padding: 7px 15px;
+}
+.mp-contact-form input[type="submit"] {
+  display: block;
+  border: 1px solid #dddddd;
+  background-color: transparent;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 7px 30px;
+  line-height: 24px;
+}
+.mp-contact-form input[type="submit"]:hover {
+  border-color: #3e3e3e;
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+
+
+/* -----------------------------------
+    13. Portfolio Details CSS
+--------------------------------------*/
+
+/*-- Portfolio Image --*/
+.portfolio-image {}
+.portfolio-image img {
+  width: 100%;
+}
+
+/*-- Portfolio Details --*/
+.portfolio-details {}
+.portfolio-details ul {}
+.portfolio-details ul li {
+  display: block;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.portfolio-details ul li + li {
+  margin-top: 5px;
+}
+.portfolio-details ul li i {
+  display: block;
+  float: left;
+  font-size: 16px;
+  line-height: 29px;
+  margin-right: 5px;
+  width: 20px;
+}
+.portfolio-details ul li span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.portfolio-details ul li a {
+  color: inherit;
+}
+.portfolio-details ul li a:hover {
+  color: #3e3e3e;
+}
+
+/*-- Portfolio Content --*/
+.portfolio-content {}
+.portfolio-content h3 {}
+.portfolio-content p {}
+
+
+/* -----------------------------------
+    14. Responsive CSS
+--------------------------------------*/
+
+/*-- Laptop Screen --*/
+@media only screen and (min-width: 1171px) and (max-width: 1400px) {
+
+
+}
+
+/*-- Desktop : 992px --*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+.mp-hero-content {
+  margin-top: 91px;
+  padding: 130px 80px;
+}
+
+
+}
+
+
+/*-- Tablet : 768px --*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.mp-hero-content {
+  margin-top: 100px;
+  padding: 85px 40px;
+}
+.mp-hero-content h1 {
+  font-size: 36px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.mp-hero-content h4 {
+  font-size: 14px;
+}
+.mp-footer-copyright, .mp-footer-contact {
+  text-align: center;
+}
+
+
+}
+
+
+/*-- Large Mobile : 480px --*/
+@media only screen and (max-width: 767px) {
+.mp-breadcrumb-section {
+  padding: 50px 0;
+}
+.mp-breadcrumb h2 {
+  font-size: 24px;
+  float: none;
+}
+.mp-breadcrumb ul {
+  margin-top: 0;
+  width: 100%;
+}
+.mp-section-title::before {
+  font-size: 120px;
+}
+.mp-section-title h1 {
+  font-size: 30px;
+  padding: 30px 20px;
+}
+.mp-section-title h1::before, .mp-section-title h1::after {
+  display: none;
+}
+.mp-hero-content {
+  margin-top: 0;
+  padding: 50px 40px;
+}
+.mp-hero-content h1 {
+  font-size: 44px;
+  line-height: 36px;
+}
+.mp-footer-copyright, .mp-footer-contact {
+  text-align: center;
+}
+.mp-footer-contact p {
+  display: block;
+}
+.mp-footer-contact p:last-child::before {
+  display: none;
+}
+
+}
+
+
+/*-- small mobile : 320px --*/
+@media only screen and (max-width: 479px) {
+.mp-breadcrumb-section {
+  padding: 40px 0;
+}
+.mp-breadcrumb h2 {
+  font-size: 18px;
+}
+.mp-breadcrumb ul li {
+  font-size: 12px;
+}
+.mp-section-title::before {
+  font-size: 80px;
+}
+.mp-section-title h1 {
+  font-size: 24px;
+  padding: 20px 15px;
+}
+.mp-hero-content {
+  padding: 40px 30px;
+}
+.mp-hero-content h1 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.mp-hero-content h4 {
+  font-size: 14px;
+}
+.mp-isotop-item a .content {
+  bottom: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+}

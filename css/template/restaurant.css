@@ -1,0 +1,855 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Pixal - Restaurant Template CSS
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1.    Section Title
+	2.    Header Section
+	3.    Hero Section
+	4.    About Section
+	5.    Dishes Section
+	6.    Dishes Menu Section
+	7.    Gallery Section
+	8.    Opening & Reservation Section
+	9.    Testimonial Section
+	10.   Footer Section
+	11.   Responsive CSS
+	
+-----------------------------------------------------------------------------------*/
+
+/* -----------------------------------
+    1. Section Title
+--------------------------------------*/
+/*-- Section Title --*/
+.res-section-title {}
+.res-section-title h1 {
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+  text-transform: capitalize;
+}
+.res-section-title h1 span {
+  color: #e54c2a;
+}
+.res-section-title p {
+  margin: 32px auto 0;
+  max-width: 710px;
+}
+.res-section-title img {
+  display: inline-block;
+  margin-top: 32px;
+  vertical-align: top;
+}
+/*-- Title White --*/
+.res-section-title.title-white h1 {
+  color: #ffffff;
+}
+.res-section-title.title-white p {
+  color: #d3d3d3;
+}
+
+
+/* -----------------------------------
+    2. Header Section
+--------------------------------------*/
+.res-header {
+  border-top: 5px solid #e54c2a;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.res-menu {}
+.res-menu ul {}
+.res-menu ul li {}
+.res-menu ul li a {}
+.res-menu ul li.active a, .res-menu ul li a:hover {
+  color: #e54c2a;
+}
+
+.res-search:hover {
+  color: #e54c2a;
+}
+
+
+/* -----------------------------------
+    3. Hero Section
+--------------------------------------*/
+.res-hero-section {
+  margin-top: 105px;
+}
+
+/*-- Hero Slider --*/
+.res-hero-slider {}
+.res-hero-slide-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/*-- Hero Content --*/
+.res-hero-slide-content {
+  padding: 305px 0 315px;
+}
+.res-hero-slide-content h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.res-hero-slide-content h1 span {
+  color: #e54c2a;
+}
+.res-hero-slide-content p {
+  margin-bottom: 46px;
+  max-width: 770px;
+}
+.res-hero-slide-content a.btn {}
+
+
+/* -----------------------------------
+    4. About Section
+--------------------------------------*/
+.res-about-section {
+  background-color: #e54c2a;
+}
+
+/*-- About Video --*/
+.res-about-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+/*-- About Content --*/
+.res-about-content {
+  padding: 135px 100px 135px 100px;
+}
+.res-about-content h1,
+.res-about-content h2,
+.res-about-content h3,
+.res-about-content h4,
+.res-about-content h5,
+.res-about-content h6 {
+  color: #ffffff;
+}
+.res-about-content h4 {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.res-about-content p {
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+.res-about-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* -----------------------------------
+    5. Dishes Section
+--------------------------------------*/
+.res-dishes-section {}
+
+/*-- Portfolio Item --*/
+.res-dishes-item {
+  border-radius: 10px;
+  position: relative;
+  transition: .3s;
+}
+
+.res-dishes-item:hover {
+  box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.1);
+}
+
+.res-dishes-item img {
+  width: 100%;
+  transition: .3s;
+}
+.res-dishes-item:hover img {
+  transform: scale(.9);
+}
+.res-dishes-item .content {
+  bottom: 55px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.res-dishes-item .content .title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.res-dishes-item .content .price {
+  color: #e54c2a;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+/* -----------------------------------
+    6. Dishes Menu Section
+--------------------------------------*/
+.res-dishes-menu-section {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+/*-- Food Menu Wrapper --*/
+.res-food-menu-wrapper {
+  background-color: #ffffff;
+  background-image: url("../../img/restaurant/bg/dishes-menu-wrapper.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  display: block;
+  float: left;
+  padding: 90px 90px 240px;
+  width: 100%;
+}
+
+/*-- Food Menu Filter --*/
+.res-food-menu-filter {
+  margin-bottom: 68px;
+}
+.res-food-menu-filter button {
+  background-color: transparent;
+  border: medium none;
+  color: #535353;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  margin: 0 22px 5px;
+  padding: 0;
+  text-transform: uppercase;
+}
+.res-food-menu-filter button.active, .res-food-menu-filter button:hover {
+  color: #e54c2a;
+}
+
+/*-- Food Menu Item --*/
+.res-food-menu-item {
+  margin-bottom: 50px;
+}
+
+.res-food-menu-item .image {
+  margin-right: 25px;
+}
+.res-food-menu-item .image img {
+  width: 100%;
+}
+
+.res-food-menu-item .content {}
+.res-food-menu-item .content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.res-food-menu-item .content p {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+.res-food-menu-item .content h4 {
+  color: #e54c2a;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* -----------------------------------
+    7. Gallery Section
+--------------------------------------*/
+.res-gallery-section {}
+
+/*-- Gallery Item --*/
+.res-gallery-item {}
+.res-gallery-item a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.res-gallery-item a::before {
+  background-color: #000000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.res-gallery-item a:hover::before {
+  opacity: 0.8;
+}
+.res-gallery-item a img {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.res-gallery-item a:hover img {
+  transform: scale(1.2);
+}
+.res-gallery-item a span {
+  color: #ffffff;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  left: 30px;
+  letter-spacing: 1px;
+  opacity: 0;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  z-index: 9;
+}
+.res-gallery-item a:hover span {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+
+/* -----------------------------------
+    8. Opening & Reservation Section
+--------------------------------------*/
+.res-opening-reservation-section {
+  background-color: #fff;
+  background-image: url("../../img/restaurant/reservation/2.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+}
+
+/*-- Opening & Reservation Wrapper --*/
+.res-opening-reservation-wrapper {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.res-opening-reservation-wrapper::before {
+  content: url("../../img/restaurant/reservation/1.jpg");
+  margin-right: -80px;
+  position: absolute;
+  right: 100%;
+  top: -28px;
+}
+
+/*-- Opening Wrapper --*/
+.res-opening-wrapper {
+  background-color: #3e3e3e;
+  outline: 2px dashed #e54c2a;
+  outline-offset: -12px;
+  padding: 12px;
+}
+
+/*-- Opening Time List --*/
+.res-opening-time-list {
+  border-bottom: 2px dashed #e54c2a;
+  overflow: hidden;
+  padding: 80px 70px 45px;
+}
+
+/*-- Title --*/
+.res-opening-time-list .title {
+  margin-bottom: 55px;
+}
+.res-opening-time-list .title h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+}
+.res-opening-time-list .title img {}
+
+/*-- List --*/
+.res-opening-time-list ul {}
+.res-opening-time-list ul li {
+  color: #dddddd;
+  float: left;
+  font-family: "Playfair Display",serif;
+  font-style: italic;
+  line-height: 24px;
+  position: relative;
+  width: 100%;
+}
+.res-opening-time-list ul li::before {
+  border-top: 2px dashed #dedede;
+  bottom: 5px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.res-opening-time-list ul li + li {
+  margin-top: 8px;
+}
+.res-opening-time-list ul li span {
+  background-color: #3e3e3e;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.res-opening-time-list ul li .days {
+  float: left;
+  padding-right: 5px;
+}
+.res-opening-time-list ul li .times {
+  float: right;
+  padding-left: 5px;
+}
+
+/*-- Open Time Online --*/
+.res-opening-time-online {
+  padding: 40px 50px 90px;
+}
+.res-opening-time-online h5 {
+  color: #dddddd;
+  font-family: "Playfair Display",serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.res-opening-time-online a {
+  color: #dddddd;
+  display: inline-block;
+  margin: 5px 8px 0;
+  vertical-align: top;
+}
+.res-opening-time-online a:hover {
+  color: #e54c2a;
+}
+.res-opening-time-online a i {
+  display: block;
+  font-size: 30px;
+}
+
+/*-- Reservation Wrapper --*/
+.res-reservation-wrapper {
+  background-color: #e54c2a;
+  padding: 90px 110px 100px;
+  text-align: center;
+}
+.res-reservation-wrapper h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 77px;
+  text-transform: capitalize;
+}
+
+/*-- Reservation Form --*/
+#reservation-form {}
+#reservation-form input {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 13px;
+  height: 44px;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+  margin-bottom: 18px;
+  padding: 9px 19px;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+#reservation-form input::placeholder {
+  color: #e2e0e0;
+}
+#reservation-form input[type="submit"] {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #e54c2a;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+#reservation-form input[type="submit"]:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* -----------------------------------
+    9. Testimonial Section
+--------------------------------------*/
+.res-testimonial-section {}
+
+/*-- Testimonial Wrapper --*/
+.res-testimonial-wrapper {
+  box-shadow: 0 -44px 46px rgba(0, 0, 0, 0.06);
+  padding: 30px 35px 0;
+  border-radius: 5px;
+}
+
+/*-- Testimonial Slider --*/
+.res-testimonial-slider {
+  box-shadow: 0 -44px 46px rgba(0, 0, 0, 0.06);
+  padding: 80px 110px 0;
+  border-radius: 5px;
+}
+
+/*-- Testimonial Slide Item --*/
+.res-testimonial-slide-item {}
+.res-testimonial-slide-item img {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.res-testimonial-slide-item p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 34px;
+  margin-bottom: 41px;
+}
+.res-testimonial-slide-item h5 {
+  color: #e54c2a;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.res-testimonial-slide-item span {
+  display: block;
+  font-size: 15px;
+}
+
+/*-- Testimonial Slider Dots --*/
+.res-testimonial-slider .slick-dots {
+  margin-top: 75px;
+  text-align: center;
+}
+.res-testimonial-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: top;
+}
+.res-testimonial-slider .slick-dots li button {
+  background-color: transparent;
+  border: medium none;
+  display: block;
+  font-family: "Playfair display",serif;
+  font-size: 24px;
+  line-height: 37px;
+  padding: 0;
+}
+.res-testimonial-slider .slick-dots li button::before {
+  content: "0";
+}
+.res-testimonial-slider .slick-dots li.slick-active button {
+  color: #e54c2a;
+  font-size: 40px;
+  line-height: 22px;
+}
+
+
+/* -----------------------------------
+    10. Footer Section
+--------------------------------------*/
+.res-footer-section {
+  background-color: #333333;
+}
+
+/*-- Footer Widget --*/
+.res-footer-widget {}
+
+/*-- Widget Title --*/
+.res-footer-widget .title {
+  color: #dddddd;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/*-- Image & Paragraph --*/
+.res-footer-widget .res-footer-logo {
+  margin-top: 35px;
+}
+.res-footer-widget img {}
+.res-footer-widget p {
+  color: #dddddd;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+/*-- Link Widget --*/
+.res-footer-widget ul {}
+.res-footer-widget ul li {
+  color: #dddddd;
+  font-size: 14px;
+  line-height: 24px;
+}
+.res-footer-widget ul li + li {
+  margin-top: 8px;
+}
+.res-footer-widget ul li a {
+  color: inherit;
+  display: inline-block;
+}
+.res-footer-widget ul li a:hover {
+  color: #e54c2a;
+}
+.res-footer-widget ul li span {
+  color: #dddddd;
+  float: left;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+/*-- Newsletter --*/
+.res-footer-newsletter {
+  float: left;
+  margin-top: 5px;
+  width: 100%;
+}
+.res-footer-newsletter form {
+  position: relative;
+}
+.res-footer-newsletter form input[type="email"] {
+  background-color: #3a3a3a;
+  border: 1px solid #484848;
+  border-radius: 5px;
+  color: #dddddd;
+  font-size: 12px;
+  height: 40px;
+  line-height: 24px;
+  padding: 6px 20px;
+  width: 100%;
+}
+.res-footer-newsletter form button.submit {
+  background-color: transparent;
+  border: medium none;
+  color: #dddddd;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 60px;
+}
+.res-footer-newsletter form button.submit i {
+  display: block;
+  font-size: 18px;
+  line-height: 40px;
+}
+.res-footer-newsletter form button.submit:hover {
+  color: #e54c2a;
+}
+
+/*-- Fotter Bottom --*/
+.res-footer-bottom {
+  padding: 16px 0;
+}
+.res-copyright {}
+.res-copyright p {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.res-copyright p a {
+  color: inherit;
+  font-size: 16px;
+}
+.res-copyright p a:hover {
+  color: #e54c2a;
+}
+
+
+/* -----------------------------------
+    11. Responsive CSS
+--------------------------------------*/
+
+/*-- Laptop Screen --*/
+@media only screen and (min-width: 1171px) and (max-width: 1400px) {
+.res-hero-slide-content {
+  padding: 185px 0;
+}
+.res-about-content {
+  padding: 70px;
+}
+
+}
+
+
+/*-- Desktop : 992px --*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+.res-hero-slide-content {
+  padding: 115px 0;
+}
+.res-hero-slide-content h1 {
+  font-size: 40px;
+}
+.res-hero-slide-content p {
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+.res-about-content {
+  padding: 50px;
+}
+
+
+}
+
+
+/*-- Tablet : 768px --*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.res-hero-slide-content {
+  padding: 115px 0;
+}
+.res-hero-slide-content h1 {
+  font-size: 36px;
+}
+.res-hero-slide-content p {
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+.res-about-image {
+  min-height: 400px;
+  position: static;
+}
+.res-about-content {
+  padding: 50px;
+}
+.res-testimonial-slider {
+  padding: 80px 80px 0;
+}
+
+
+}
+
+
+/*-- Large Mobile : 480px --*/
+@media only screen and (max-width: 767px) {
+.res-section-title h1 {
+  font-size: 30px;
+}
+.res-hero-section {
+  margin-top: 80px;
+}
+.res-hero-slide-content {
+  padding: 80px 0;
+}
+.res-hero-slide-content h1 {
+  font-size: 24px;
+}
+.res-hero-slide-content p {
+  margin-bottom: 30px;
+}
+.res-about-image {
+  min-height: 400px;
+  position: static;
+}
+.res-about-content {
+  padding: 50px;
+}
+.res-food-menu-wrapper {
+  padding: 50px 35px 160px;
+}
+.res-food-menu-item .image {
+  margin-right: 15px;
+  width: 80px;
+}
+.res-reservation-wrapper {
+  padding: 90px 60px 100px;
+}
+.res-testimonial-wrapper {
+  padding: 20px 20px 0;
+}
+.res-testimonial-slider {
+  padding: 50px 50px 0;
+}
+.res-footer-widget .res-footer-logo {
+  margin-top: 0;
+}
+
+}
+
+
+/*-- small mobile : 320px --*/
+@media only screen and (max-width: 479px) {
+.res-section-title h1 {
+  font-size: 24px;
+}
+.res-dishes-item .content {
+  bottom: 30px;
+}
+.res-food-menu-item .image {
+  float: none;
+  margin-bottom: 10px;
+}
+.res-opening-time-list {
+  padding: 50px 15px 45px;
+}
+.res-opening-time-online {
+  padding: 40px 15px 50px;
+}
+.res-opening-time-online a {
+  margin: 5px 2px 0;
+}
+.res-reservation-wrapper {
+  padding: 50px 30px;
+}
+.res-reservation-wrapper h3 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.res-testimonial-slider {
+  padding: 50px 30px 0;
+}
+.res-testimonial-slide-item p {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+.res-testimonial-slide-item img {
+  margin-bottom: 40px;
+  width: 50px;
+}
+.res-testimonial-slider .slick-dots li {
+  margin: 0 5px;
+}
+
+
+}
+
+

@@ -1,0 +1,33 @@
+/*
+
+*/
+/*================================================
+[  Table of contents  ]
+================================================
+
+  1. Import Default & Template CSS
+  2. Custom CSS Goes Here
+
+======================================
+[ End table content ]
+======================================*/
+
+/*--
+    1. Import Default & Template CSS
+----------------------------------------*/
+/*Default*/
+@import url('css/default.css');
+/*Buttons*/
+@import url('css/shortcode/buttons.css');
+/*Headers*/
+@import url('css/shortcode/header.css');
+/*Templates*/
+@import url('css/template/creative.css');
+@import url('css/template/corporate.css');
+@import url('css/template/restaurant.css');
+@import url('css/template/minimal.css');
+@import url('css/template/photography.css');
+
+/*--
+    2. Custom CSS Goes Here
+----------------------------------------*/
